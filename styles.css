@@ -747,3 +747,345 @@ footer p {
         font-size: 2.5rem;
     }
 }
+
+/* Bio Page Specific Styles */
+.hero-bio {
+    min-height: 50vh;
+}
+
+.bio-intro {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bio-header {
+    margin-bottom: 3rem;
+}
+
+.bio-header h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.bio-title {
+    font-size: 1.3rem;
+    color: var(--peach-500);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.bio-credentials {
+    font-size: 1rem;
+    color: var(--neutral-700);
+    font-style: italic;
+}
+
+.bio-summary {
+    margin-top: 2rem;
+}
+
+/* Timeline Styles */
+.timeline {
+    max-width: 900px;
+    margin: 4rem auto;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--peach-300), var(--pink-300));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--peach-500);
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--peach-500);
+}
+
+.timeline-content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-900);
+}
+
+.timeline-date {
+    font-size: 0.95rem;
+    color: var(--peach-500);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-content p {
+    color: var(--neutral-700);
+    line-height: 1.7;
+}
+
+/* Achievements Grid */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.achievement-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--neutral-900);
+}
+
+.achievement-card p {
+    color: var(--neutral-700);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Testimonials */
+.testimonials {
+    max-width: 900px;
+    margin: 3rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.testimonial {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--peach-500);
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: var(--neutral-700);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    border-top: 1px solid var(--neutral-200);
+    padding-top: 1rem;
+}
+
+.author-name {
+    font-weight: 600;
+    color: var(--neutral-900);
+    margin-bottom: 0.25rem;
+}
+
+.author-title {
+    font-size: 0.9rem;
+    color: var(--neutral-700);
+}
+
+/* Leadership Principles */
+.leadership-principles {
+    max-width: 900px;
+    margin: 4rem auto 0;
+}
+
+.leadership-principles h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.principle {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.principle h4 {
+    font-size: 1.3rem;
+    color: var(--peach-500);
+    margin-bottom: 1rem;
+}
+
+.principle p {
+    color: var(--neutral-700);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Education Grid */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.education-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.education-item h4 {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.education-program {
+    color: var(--peach-200);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.education-list li::before {
+    content: "→ ";
+    color: var(--peach-300);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Community Grid */
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.community-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border-top: 3px solid var(--peach-500);
+}
+
+.community-item h4 {
+    font-size: 1.4rem;
+    color: var(--neutral-900);
+    margin-bottom: 0.5rem;
+}
+
+.community-role {
+    color: var(--peach-500);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.community-item p {
+    color: var(--neutral-700);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Expertise Columns */
+.expertise-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.expertise-column h3 {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.expertise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.expertise-list li {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+}
+
+.expertise-list li::before {
+    content: "✓ ";
+    color: var(--peach-300);
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+/* Responsive adjustments for bio page */
+@media (max-width: 768px) {
+    .bio-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .achievements-grid,
+    .education-grid,
+    .community-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .timeline-item {
+        padding-left: 1.5rem;
+    }
+
+    .expertise-columns {
+        grid-template-columns: 1fr;
+    }
+}
